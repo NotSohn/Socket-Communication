@@ -9,7 +9,7 @@ from PyQt6.uic import loadUi
 IP = "127.0.0.1"
 PORT = 3514
 
-gui_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+gui_socket = socket.socket()
 gui_socket.connect((IP, PORT))
 
 class GUI(QMainWindow):
